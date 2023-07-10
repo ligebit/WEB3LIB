@@ -1,0 +1,15 @@
+{
+    "dependencies": {
+        "ethers": "^6.6.2"
+    },
+    "main": "dist/index.js",
+    "name": "web3lib",
+    "version": "1.0.0",
+    "devDependencies": {},
+    "scripts": {
+        "build": "tsc --declaration"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
