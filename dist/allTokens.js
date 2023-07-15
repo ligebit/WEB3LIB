@@ -21,34 +21,168 @@ exports.ALL_TOKENS = {
             "decimals": 18,
             "chainId": chain_1.EChains.DarwiniaCrabNetwork,
         }],
-    [chain_1.EChains.Wanchain]: [{
+    [chain_1.EChains.Wanchain]: [
+        {
             "symbol": "WAN",
             "name": "WAN",
             "decimals": 18,
             "chainId": chain_1.EChains.Wanchain,
             "coingeckoId": "wanchain"
-        }],
-    [chain_1.EChains.Syscoin]: [{
+        },
+        {
+            address: '0x11e77E27Af5539872efEd10abaA0b408cfd9fBBD',
+            decimals: 6,
+            symbol: 'wanUSDT',
+            coingeckoId: 'tether',
+            chainId: chain_1.EChains.Wanchain
+        },
+        {
+            address: '0x52A9CEA01c4CBDd669883e41758B8eB8e8E2B34b',
+            decimals: 6,
+            symbol: 'wanUSDC',
+            coingeckoId: 'usd-coin',
+            chainId: chain_1.EChains.Wanchain
+        },
+        {
+            address: '0xdabD997aE5E4799BE47d6E69D9431615CBa28f48',
+            decimals: 18,
+            symbol: 'wWAN',
+            coingeckoId: 'wanchain',
+            chainId: chain_1.EChains.Wanchain
+        },
+        {
+            address: '0xE3aE74D1518A76715aB4C7BeDF1af73893cd435A',
+            decimals: 18,
+            symbol: 'wanETH',
+            coingeckoId: 'ethereum',
+            chainId: chain_1.EChains.Wanchain
+        },
+        {
+            address: '0x50c439B6d602297252505a6799d84eA5928bCFb6',
+            decimals: 8,
+            symbol: 'wanWBTC',
+            coingeckoId: 'bitcoin',
+            chainId: chain_1.EChains.Wanchain
+        }
+    ],
+    [chain_1.EChains.Syscoin]: [
+        {
             "symbol": "SYS",
             "name": "SYS",
             "decimals": 18,
             "chainId": chain_1.EChains.Syscoin,
             "coingeckoId": "syscoin"
-        }],
-    [chain_1.EChains.Bitgert]: [{
+        },
+        {
+            address: '0x922D641a426DcFFaeF11680e5358F34d97d112E1',
+            decimals: 6,
+            symbol: 'USDT',
+            coingeckoId: 'tether',
+            chainId: chain_1.EChains.Syscoin
+        },
+        {
+            address: '0x2bF9b864cdc97b08B6D79ad4663e71B8aB65c45c',
+            decimals: 6,
+            symbol: 'USDC',
+            coingeckoId: 'usd-coin',
+            chainId: chain_1.EChains.Syscoin
+        },
+        {
+            address: '0xd3e822f3ef011Ca5f17D82C956D952D8d7C3A1BB',
+            decimals: 18,
+            symbol: 'WSYS',
+            coingeckoId: 'syscoin',
+            chainId: chain_1.EChains.Syscoin
+        },
+        {
+            address: '0x7C598c96D02398d89FbCb9d41Eab3DF0C16F227D',
+            decimals: 18,
+            symbol: 'ETH',
+            coingeckoId: 'ethereum',
+            chainId: chain_1.EChains.Syscoin
+        },
+        {
+            address: '0xc9BAA8cfdDe8E328787E29b4B078abf2DaDc2055',
+            decimals: 8,
+            symbol: 'WBTC',
+            coingeckoId: 'bitcoin',
+            chainId: chain_1.EChains.Syscoin
+        }
+    ],
+    [chain_1.EChains.Bitgert]: [
+        {
             "symbol": "BRISE",
             "name": "BRISE",
             "decimals": 18,
             "chainId": chain_1.EChains.Bitgert,
             "coingeckoId": "bitrise-token"
-        }],
-    [chain_1.EChains.Meter]: [{
+        },
+        {
+            address: '0x0eb9036cbE0f052386f36170c6b07eF0a0E3f710',
+            decimals: 18,
+            chainId: chain_1.EChains.Bitgert,
+            symbol: 'WBRISE',
+            coingeckoId: 'bitrise-token',
+        }
+    ],
+    [chain_1.EChains.Meter]: [
+        {
             "symbol": "MTR",
             "name": "Meter Stable",
             "decimals": 18,
             "chainId": chain_1.EChains.Meter,
             "coingeckoId": "meter-stable",
-        }],
+        },
+        {
+            address: '0x5Fa41671c48e3C951AfC30816947126CCC8C162e',
+            decimals: 6,
+            symbol: 'USDT',
+            coingeckoId: 'tether',
+            chainId: chain_1.EChains.Meter
+        },
+        {
+            address: '0x24aA189DfAa76c671c279262F94434770F557c35',
+            decimals: 18,
+            symbol: 'BUSD',
+            coingeckoId: 'binance-usd',
+            chainId: chain_1.EChains.Meter
+        },
+        {
+            address: '0x160361ce13ec33C993b5cCA8f62B6864943eb083',
+            decimals: 18,
+            symbol: 'wMTR',
+            coingeckoId: 'meter-stable',
+            chainId: chain_1.EChains.Meter
+        },
+        {
+            address: '0x228ebBeE999c6a7ad74A6130E81b12f9Fe237Ba3',
+            decimals: 18,
+            symbol: 'MTRG',
+            coingeckoId: 'meter',
+            chainId: chain_1.EChains.Meter
+        },
+        {
+            address: '0xd86e243fc0007e6226b07c9a50c9d70d78299eb5',
+            decimals: 6,
+            symbol: 'USDC',
+            coingeckoId: 'usd-coin',
+            chainId: chain_1.EChains.Meter
+        },
+        {
+            address: '0xf0e86246519be0810c9fafc8430c49799985aaa8',
+            decimals: 18,
+            symbol: 'BNB',
+            coingeckoId: 'binancecoin',
+            chainId: chain_1.EChains.Meter
+        },
+        {
+            address: '0x983147fb73a45fc7f8b4dfa1cd61bdc7b111e5b6',
+            decimals: 18,
+            symbol: 'ETH',
+            coingeckoId: 'ethereum',
+            chainId: chain_1.EChains.Meter
+        }
+    ],
     [chain_1.EChains.Energy]: [{
             "symbol": "NRG",
             "name": "NRG",
@@ -319,6 +453,13 @@ exports.ALL_TOKENS = {
         }
     ],
     [chain_1.EChains.MOONBEAM]: [
+        {
+            address: '0x931715FEE2d06333043d11F658C8CE934aC61D0c',
+            decimals: 6,
+            chainId: chain_1.EChains.MOONBEAM,
+            symbol: 'USDC',
+            coingeckoId: 'usd-coin',
+        },
         {
             "address": "0xfA9343C3897324496A05fC75abeD6bAC29f8A40f",
             "symbol": "ETH",
@@ -22340,6 +22481,41 @@ exports.ALL_TOKENS = {
             "chainId": chain_1.EChains.Metis,
             "coingeckoId": "metis-token",
         },
+        {
+            address: '0xEA32A96608495e54156Ae48931A7c20f0dcc1a21',
+            decimals: 6,
+            symbol: 'USDC',
+            coingeckoId: 'usd-coin',
+            chainId: chain_1.EChains.Metis
+        },
+        {
+            address: '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
+            decimals: 18,
+            symbol: 'METIS',
+            coingeckoId: 'metis-token',
+            chainId: chain_1.EChains.Metis
+        },
+        {
+            address: '0x420000000000000000000000000000000000000a',
+            decimals: 18,
+            symbol: 'ETH',
+            coingeckoId: 'ethereum',
+            chainId: chain_1.EChains.Metis
+        },
+        {
+            address: '0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC',
+            decimals: 6,
+            symbol: 'USDT',
+            coingeckoId: 'tether',
+            chainId: chain_1.EChains.Metis
+        },
+        {
+            address: '0x2692BE44A6E38B698731fDDf417d060f0d20A0cB',
+            decimals: 18,
+            symbol: 'BNB',
+            coingeckoId: 'binancecoin',
+            chainId: chain_1.EChains.Metis
+        }
     ],
     [chain_1.EChains.OKXChain]: [
         {
@@ -95885,6 +96061,48 @@ exports.ALL_TOKENS = {
             "decimals": 18,
             "chainId": chain_1.EChains.OasisEmerald,
             "coingeckoId": 'oasis-network',
+        },
+        {
+            address: '0x21C718C22D52d0F3a789b752D4c2fD5908a8A733',
+            decimals: 18,
+            chainId: chain_1.EChains.OasisEmerald,
+            symbol: 'ROSE',
+            coingeckoId: 'oasis-network',
+        },
+        {
+            address: '0xdC19A122e268128B5eE20366299fc7b5b199C8e3',
+            decimals: 6,
+            chainId: chain_1.EChains.OasisEmerald,
+            symbol: 'USDTWormhole',
+            coingeckoId: 'tether',
+        },
+        {
+            address: '0x6Cb9750a92643382e020eA9a170AbB83Df05F30B',
+            decimals: 6,
+            chainId: chain_1.EChains.OasisEmerald,
+            symbol: 'USDT',
+            coingeckoId: 'tether',
+        },
+        {
+            address: '0x3223f17957Ba502cbe71401D55A0DB26E5F7c68F',
+            decimals: 18,
+            chainId: chain_1.EChains.OasisEmerald,
+            symbol: 'WETHwormhole',
+            coingeckoId: 'ethereum',
+        },
+        {
+            address: '0x94fbfFe5698DB6f54d6Ca524DbE673a7729014Be',
+            decimals: 6,
+            chainId: chain_1.EChains.OasisEmerald,
+            symbol: 'USDC',
+            coingeckoId: 'usd-coin',
+        },
+        {
+            address: '0x5C78A65AD6D0eC6618788b6E8e211F31729111Ca',
+            decimals: 18,
+            chainId: chain_1.EChains.OasisEmerald,
+            symbol: 'WROSE2',
+            coingeckoId: 'oasis-network',
         }
     ],
     [chain_1.EChains.EosEVM]: [
@@ -95894,6 +96112,27 @@ exports.ALL_TOKENS = {
             "decimals": 18,
             "chainId": chain_1.EChains.EosEVM,
             "coingeckoId": 'eos',
+        },
+        {
+            address: '0x765277EebeCA2e31912C9946eAe1021199B39C61',
+            decimals: 6,
+            chainId: chain_1.EChains.EosEVM,
+            symbol: 'USDC',
+            coingeckoId: 'usd-coin',
+        },
+        {
+            address: '0xfA9343C3897324496A05fC75abeD6bAC29f8A40f',
+            decimals: 6,
+            chainId: chain_1.EChains.EosEVM,
+            symbol: 'USDT',
+            coingeckoId: 'tether',
+        },
+        {
+            address: '0xc00592aa41d32d137dc480d9f6d0df19b860104f',
+            decimals: 18,
+            chainId: chain_1.EChains.EosEVM,
+            symbol: 'WEOS',
+            coingeckoId: 'eos',
         }
     ],
     [chain_1.EChains.KavaEVM]: [
@@ -95903,6 +96142,41 @@ exports.ALL_TOKENS = {
             "decimals": 18,
             "chainId": chain_1.EChains.KavaEVM,
             "coingeckoId": 'kava',
+        },
+        {
+            address: '0xeb466342c4d449bc9f53a865d5cb90586f405215',
+            decimals: 6,
+            chainId: chain_1.EChains.KavaEVM,
+            symbol: 'axlUSDC',
+            coingeckoId: 'usd-coin',
+        },
+        {
+            address: '0xc86c7c0efbd6a49b35e8714c5f59d99de09a225b',
+            decimals: 18,
+            chainId: chain_1.EChains.KavaEVM,
+            symbol: 'wKAVA',
+            coingeckoId: 'kava',
+        },
+        {
+            address: '0xfa9343c3897324496a05fc75abed6bac29f8a40f',
+            decimals: 6,
+            chainId: chain_1.EChains.KavaEVM,
+            symbol: 'multiUSDC',
+            coingeckoId: 'usd-coin',
+        },
+        {
+            address: '0xb449ab6905af7c801311e8f4e76932ee959c663c',
+            decimals: 6,
+            chainId: chain_1.EChains.KavaEVM,
+            symbol: 'multiUSDT',
+            coingeckoId: 'tether',
+        },
+        {
+            address: '0x765277eebeca2e31912c9946eae1021199b39c61',
+            decimals: 18,
+            chainId: chain_1.EChains.KavaEVM,
+            symbol: 'multiDAI',
+            coingeckoId: 'dai',
         }
     ],
     [chain_1.EChains.Ultron]: [
@@ -95912,6 +96186,55 @@ exports.ALL_TOKENS = {
             "decimals": 18,
             "chainId": chain_1.EChains.Ultron,
             "coingeckoId": 'ultron',
+        },
+        {
+            address: '0x3a4f06431457de873b588846d139ec0d86275d54',
+            decimals: 18,
+            chainId: chain_1.EChains.Ultron,
+            symbol: 'WULX',
+            coingeckoId: 'ultron',
+        },
+        {
+            address: '0x97fdd294024f50c388e39e73f1705a35cfe87656',
+            decimals: 6,
+            chainId: chain_1.EChains.Ultron,
+            symbol: 'USDT',
+            coingeckoId: 'tether',
+        },
+        {
+            address: '0x3c4e0fded74876295ca36f62da289f69e3929cc4',
+            decimals: 6,
+            chainId: chain_1.EChains.Ultron,
+            symbol: 'USDC',
+            coingeckoId: 'usd-coin',
+        },
+        {
+            address: '0xb1183357745d3fd7d291e42a2c4b478cdb5710c6',
+            decimals: 18,
+            chainId: chain_1.EChains.Ultron,
+            symbol: 'WULX2',
+            coingeckoId: 'ultron',
+        },
+        {
+            address: '0x2318bf5809a72aabadd15a3453a18e50bbd651cd',
+            decimals: 18,
+            chainId: chain_1.EChains.Ultron,
+            symbol: 'ETH',
+            coingeckoId: 'ethereum',
+        },
+        {
+            address: '0xd2b86a80a8f30b83843e247a50ecdc8d843d87dd',
+            decimals: 18,
+            chainId: chain_1.EChains.Ultron,
+            symbol: 'BTC',
+            coingeckoId: 'bitcoin',
+        },
+        {
+            address: '0x169ac560852ed79af3d97a8977dcf2eba54a0488',
+            decimals: 18,
+            chainId: chain_1.EChains.Ultron,
+            symbol: 'BNB',
+            coingeckoId: 'binancecoin',
         }
     ],
     [chain_1.EChains.Core]: [
