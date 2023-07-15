@@ -6,7 +6,7 @@ export type IToken = {
     address?: string;
     chainId?: EChains;
 };
-export declare let tokensCache: Map<string, Token<IToken>>;
+export declare let tokensCache: Map<string, Token<IToken>[]>;
 export declare class Token<T extends IToken = IToken> implements IToken {
     symbol?: string;
     name?: string;
@@ -14,7 +14,7 @@ export declare class Token<T extends IToken = IToken> implements IToken {
     address?: string;
     chainId?: EChains;
     constructor(token: T, saveIntoTokensCache?: boolean);
-    static from(address: string): Token | undefined;
+    static from(address: string, chainId: EChains): Token | undefined;
     equals(other: Token): boolean;
     toString(): string;
     clone(): Token;

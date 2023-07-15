@@ -17,7 +17,8 @@ export type IToken = {
     chainId?: EChains;
 }
 
-export let tokensCache = new Map<string, Token>();
+//add cache from chain
+export let tokensCache = new Map<string, Token[]>();
 
 export class Token<T extends IToken = IToken> implements IToken {
     symbol?: string;
@@ -29,7 +30,7 @@ export class Token<T extends IToken = IToken> implements IToken {
     constructor(token: T, saveIntoTokensCache = true) {
         token.address = isAddress(token.address) ? getAddress(token.address) : token.address;
 
-        const savedToken = tokensCache.get(token.address);
+        const savedToken = tokensCache.get(token.address)?.find(t => t.chainId == token.chainId);
 
         // //load from cache
         // if(savedToken) Object.assign(this, savedToken);
@@ -42,12 +43,12 @@ export class Token<T extends IToken = IToken> implements IToken {
 
         //save into cache
         if(saveIntoTokensCache && token.address) {
-            tokensCache.set(token.address, this.clone());
+            tokensCache.set(token.address, (tokensCache.get(token.address) || []).concat([this.clone()]));
         }
     }
 
-    static from(address: string): Token | undefined {
-        return tokensCache.get(address);
+    static from(address: string, chainId: EChains): Token | undefined {
+        return tokensCache.get(address).find(t => t.chainId == chainId);
     }
 
     equals(other: Token): boolean {
