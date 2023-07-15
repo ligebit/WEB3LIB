@@ -1,4 +1,4 @@
-import { ethers, getAddress } from 'ethers'
+import { ethers, getAddress, isAddress } from 'ethers'
 import { EChains } from './chain';
 
 
@@ -27,7 +27,7 @@ export class Token<T extends IToken = IToken> implements IToken {
     chainId?: EChains;
     
     constructor(token: T, saveIntoTokensCache = true) {
-        token.address = token.address ? getAddress(token.address) : undefined;
+        token.address = isAddress(token.address) ? getAddress(token.address) : token.address;
 
         const savedToken = tokensCache.get(token.address);
 

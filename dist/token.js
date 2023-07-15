@@ -5,7 +5,7 @@ const ethers_1 = require("ethers");
 exports.tokensCache = new Map();
 class Token {
     constructor(token, saveIntoTokensCache = true) {
-        token.address = token.address ? (0, ethers_1.getAddress)(token.address) : undefined;
+        token.address = (0, ethers_1.isAddress)(token.address) ? (0, ethers_1.getAddress)(token.address) : token.address;
         const savedToken = exports.tokensCache.get(token.address);
         // //load from cache
         // if(savedToken) Object.assign(this, savedToken);
