@@ -20,7 +20,7 @@ class Token {
         }
     }
     static from(address, chainId) {
-        return exports.tokensCache.get(address).find(t => t.chainId == chainId);
+        return exports.tokensCache.get((0, ethers_1.getAddress)(address)).find(t => t.chainId == chainId);
     }
     equals(other) {
         return this.address === other.address;

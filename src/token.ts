@@ -48,7 +48,7 @@ export class Token<T extends IToken = IToken> implements IToken {
     }
 
     static from(address: string, chainId: EChains): Token | undefined {
-        return tokensCache.get(address).find(t => t.chainId == chainId);
+        return tokensCache.get(getAddress(address)).find(t => t.chainId == chainId);
     }
 
     equals(other: Token): boolean {
