@@ -330,4 +330,19 @@ exports.ALL_CHAINS = {
         token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.DarwiniaNetwork].find(el => el.coingeckoId == 'darwinia-network-native-token')),
         explorerScanLike: 'https://darwinia.subview.xyz/api'
     },
+    [chain_1.EChains.Celo]: {
+        id: 42220,
+        rpc: {
+            endpoint: 'https://rpc.ankr.com/celo',
+            supportBatchCall: true
+        },
+        name: 'CELO',
+        currency: 'CELO',
+        explorer: {
+            tx: function (tx) { return `https://explorer.celo.org/mainnet/tx/${tx}`; },
+        },
+        isEvm: true,
+        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Celo].find(el => el.coingeckoId == 'celo')),
+        explorerScanLike: 'https://explorer.celo.org/mainnet/api'
+    },
 };

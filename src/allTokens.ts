@@ -27953,6 +27953,13 @@ export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
     ],
     [EChains.Celo]: [
         {
+            "symbol": "CELO",
+            "name": "CELO",
+            "decimals": 18,
+            "chainId": EChains.Celo,
+            "coingeckoId": "celo",
+        },
+        {
             "address": "0xef4229c8c3250C675F21BCefa42f58EfbfF6002a",
             "symbol": "USDC",
             "name": "Optics v2 USDC",

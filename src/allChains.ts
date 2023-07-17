@@ -331,4 +331,19 @@ export const ALL_CHAINS: { [key in EChains]?: IChain } = {
         token: new TokenJSON(ALL_TOKENS[EChains.DarwiniaNetwork].find(el => el.coingeckoId == 'darwinia-network-native-token')),
         explorerScanLike: 'https://darwinia.subview.xyz/api'
     },
+    [EChains.Celo]: {
+        id: 42220,
+        rpc: {
+            endpoint: 'https://rpc.ankr.com/celo',
+            supportBatchCall: true
+        },
+        name: 'CELO',
+        currency: 'CELO',
+        explorer: {
+            tx: function(tx: string) {return `https://explorer.celo.org/mainnet/tx/${tx}`},
+        },
+        isEvm: true,
+        token: new TokenJSON(ALL_TOKENS[EChains.Celo].find(el => el.coingeckoId == 'celo')),
+        explorerScanLike: 'https://explorer.celo.org/mainnet/api'
+    },
 }
