@@ -27946,7 +27946,7 @@ exports.ALL_TOKENS = {
             "decimals": 6,
             "chainId": chain_1.EChains.Celo,
             "logoURI": "https://raw.githubusercontent.com/ubeswap/default-token-list/master/assets/asset_USDC.png",
-            "coingeckoId": null,
+            "coingeckoId": "usd-coin",
             "listedIn": [
                 "sushiswap",
                 "lifinance",

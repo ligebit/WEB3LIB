@@ -27966,7 +27966,7 @@ export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
             "decimals": 6,
             "chainId": EChains.Celo,
             "logoURI": "https://raw.githubusercontent.com/ubeswap/default-token-list/master/assets/asset_USDC.png",
-            "coingeckoId": null,
+            "coingeckoId": "usd-coin",
             "listedIn": [
                 "sushiswap",
                 "lifinance",
