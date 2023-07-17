@@ -47882,6 +47882,7 @@ export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
             "symbol": "abBNB",
             "name": "abBNB",
             "decimals": 18,
+            "coingeckoId": "binancecoin",
             "chainId": EChains.Aurora,
         },
         {
@@ -47916,6 +47917,7 @@ export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
             "address": "0x80A16016cC4A2E6a2CACA8a4a498b1699fF0f844",
             "symbol": "AVAX",
             "name": "AVAX",
+            "coingeckoId": "wrapped-avax",
             "decimals": 18,
             "chainId": EChains.Aurora,
         },

@@ -47862,6 +47862,7 @@ exports.ALL_TOKENS = {
             "symbol": "abBNB",
             "name": "abBNB",
             "decimals": 18,
+            "coingeckoId": "binancecoin",
             "chainId": chain_1.EChains.Aurora,
         },
         {
@@ -47896,6 +47897,7 @@ exports.ALL_TOKENS = {
             "address": "0x80A16016cC4A2E6a2CACA8a4a498b1699fF0f844",
             "symbol": "AVAX",
             "name": "AVAX",
+            "coingeckoId": "wrapped-avax",
             "decimals": 18,
             "chainId": chain_1.EChains.Aurora,
         },
