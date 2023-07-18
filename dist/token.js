@@ -1,12 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Token = exports.tokensCache = void 0;
-const ethers_1 = require("ethers");
 //add cache from chain
 exports.tokensCache = new Map();
 class Token {
     constructor(token, saveIntoTokensCache = true) {
-        token.address = (0, ethers_1.isAddress)(token.address) ? (0, ethers_1.getAddress)(token.address) : token.address;
+        token.address = token.address?.toLowerCase();
         const savedToken = exports.tokensCache.get(token.address)?.find(t => t.chainId == token.chainId);
         // //load from cache
         // if(savedToken) Object.assign(this, savedToken);
@@ -20,7 +19,7 @@ class Token {
         }
     }
     static from(address, chainId) {
-        return exports.tokensCache.get((0, ethers_1.getAddress)(address)).find(t => t.chainId == chainId);
+        return exports.tokensCache.get(address.toLowerCase()).find(t => t.chainId == chainId);
     }
     equals(other) {
         return this.address === other.address;

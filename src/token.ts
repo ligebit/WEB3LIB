@@ -1,8 +1,4 @@
-import { ethers, getAddress, isAddress } from 'ethers'
 import { EChains } from './chain';
-
-
-interface Empty {}
 
 // type IPropertiesToAdd<T extends {}> = T & {
 //     on(): void
@@ -28,7 +24,7 @@ export class Token<T extends IToken = IToken> implements IToken {
     chainId?: EChains;
     
     constructor(token: T, saveIntoTokensCache = true) {
-        token.address = isAddress(token.address) ? getAddress(token.address) : token.address;
+        token.address = token.address?.toLowerCase();
 
         const savedToken = tokensCache.get(token.address)?.find(t => t.chainId == token.chainId);
 
@@ -48,7 +44,7 @@ export class Token<T extends IToken = IToken> implements IToken {
     }
 
     static from(address: string, chainId: EChains): Token | undefined {
-        return tokensCache.get(getAddress(address)).find(t => t.chainId == chainId);
+        return tokensCache.get(address.toLowerCase()).find(t => t.chainId == chainId);
     }
 
     equals(other: Token): boolean {
