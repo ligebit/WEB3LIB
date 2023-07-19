@@ -26,6 +26,13 @@ export class TokenJSON extends Token<ITokenJSON> implements ITokenJSON {
 
 
 export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
+    [EChains.Mantle]: [{
+        "symbol": "MNT",
+        "name": "MNT",
+        "decimals": 18,
+        "chainId": EChains.Mantle,
+        "coingeckoId": "mantle"
+    }],
     [EChains.DarwiniaNetwork]: [{
         "symbol": "RING",
         "name": "RING",

@@ -8,6 +8,13 @@ class TokenJSON extends token_1.Token {
 exports.TokenJSON = TokenJSON;
 ;
 exports.ALL_TOKENS = {
+    [chain_1.EChains.Mantle]: [{
+            "symbol": "MNT",
+            "name": "MNT",
+            "decimals": 18,
+            "chainId": chain_1.EChains.Mantle,
+            "coingeckoId": "mantle"
+        }],
     [chain_1.EChains.DarwiniaNetwork]: [{
             "symbol": "RING",
             "name": "RING",

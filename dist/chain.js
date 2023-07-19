@@ -32,6 +32,7 @@ var EChains;
     EChains[EChains["Moonriver"] = 1285] = "Moonriver";
     EChains[EChains["CubeChain"] = 1818] = "CubeChain";
     EChains[EChains["KavaEVM"] = 2222] = "KavaEVM";
+    EChains[EChains["Mantle"] = 5000] = "Mantle";
     EChains[EChains["Evmos"] = 9001] = "Evmos";
     EChains[EChains["Bitgert"] = 32520] = "Bitgert";
     EChains[EChains["Avalanche"] = 43114] = "Avalanche";

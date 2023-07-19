@@ -346,4 +346,19 @@ export const ALL_CHAINS: { [key in EChains]?: IChain } = {
         token: new TokenJSON(ALL_TOKENS[EChains.Celo].find(el => el.coingeckoId == 'celo')),
         explorerScanLike: 'https://explorer.celo.org/mainnet/api'
     },
+    [EChains.Mantle]: {
+        id: 5000,
+        rpc: {
+            endpoint: 'https://rpc.mantle.xyz',
+            supportBatchCall: true
+        },
+        name: 'MNT',
+        currency: 'MNT',
+        explorer: {
+            tx: function(tx: string) {return `https://explorer.mantle.xyz/tx/${tx}`},
+        },
+        isEvm: true,
+        token: new TokenJSON(ALL_TOKENS[EChains.Mantle].find(el => el.coingeckoId == 'mantle')),
+        explorerScanLike: 'https://explorer.mantle.xyz/api'
+    },
 }

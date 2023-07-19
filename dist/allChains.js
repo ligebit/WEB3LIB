@@ -345,4 +345,19 @@ exports.ALL_CHAINS = {
         token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Celo].find(el => el.coingeckoId == 'celo')),
         explorerScanLike: 'https://explorer.celo.org/mainnet/api'
     },
+    [chain_1.EChains.Mantle]: {
+        id: 5000,
+        rpc: {
+            endpoint: 'https://rpc.mantle.xyz',
+            supportBatchCall: true
+        },
+        name: 'MNT',
+        currency: 'MNT',
+        explorer: {
+            tx: function (tx) { return `https://explorer.mantle.xyz/tx/${tx}`; },
+        },
+        isEvm: true,
+        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Mantle].find(el => el.coingeckoId == 'mantle')),
+        explorerScanLike: 'https://explorer.mantle.xyz/api'
+    },
 };
