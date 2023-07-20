@@ -24,15 +24,46 @@ export class TokenJSON extends Token<ITokenJSON> implements ITokenJSON {
     listedIn?: string[];
 };
 
+const USDT = new TokenJSON({
+    address: '0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE',
+    decimals: 6,
+    symbol: 'USDT',
+    coingeckoId: 'tether',
+    chainId: EChains.Mantle
+});
+const WETH = new TokenJSON({
+    address: '0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111',
+    decimals: 18,
+    symbol: 'WETH',
+    coingeckoId: 'ethereum',
+    chainId: EChains.Mantle
+});
 
 export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
-    [EChains.Mantle]: [{
-        "symbol": "MNT",
-        "name": "MNT",
-        "decimals": 18,
-        "chainId": EChains.Mantle,
-        "coingeckoId": "mantle"
-    }],
+    [EChains.Mantle]: [
+        {
+            "symbol": "MNT",
+            "name": "MNT",
+            "decimals": 18,
+            "chainId": EChains.Mantle,
+            "coingeckoId": "mantle"
+        }, {
+            address: '0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE',
+            decimals: 6,
+            symbol: 'USDT',
+            "name": "USDT",
+            coingeckoId: 'tether',
+            chainId: EChains.Mantle
+        },
+        {
+            address: '0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111',
+            decimals: 18,
+            symbol: 'WETH',
+            name: 'WETH',
+            coingeckoId: 'ethereum',
+            chainId: EChains.Mantle
+        }
+    ],
     [EChains.DarwiniaNetwork]: [{
         "symbol": "RING",
         "name": "RING",
