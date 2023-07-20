@@ -44,6 +44,22 @@ exports.ALL_TOKENS = {
             name: 'WETH',
             coingeckoId: 'ethereum',
             chainId: chain_1.EChains.Mantle
+        },
+        {
+            address: '0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8',
+            decimals: 18,
+            symbol: 'wMNT',
+            name: 'wMNT',
+            coingeckoId: 'mantle',
+            chainId: chain_1.EChains.Mantle
+        },
+        {
+            address: '0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9',
+            decimals: 6,
+            symbol: 'USDC',
+            name: 'USDC',
+            coingeckoId: 'usd-coin',
+            chainId: chain_1.EChains.Mantle
         }
     ],
     [chain_1.EChains.DarwiniaNetwork]: [{
