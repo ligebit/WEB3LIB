@@ -22,6 +22,13 @@ const WETH = new TokenJSON({
     chainId: chain_1.EChains.Mantle
 });
 exports.ALL_TOKENS = {
+    [chain_1.EChains.Neon]: [{
+            "symbol": "NEON",
+            "name": "NEON",
+            "decimals": 18,
+            "chainId": chain_1.EChains.Neon,
+            "coingeckoId": "neon"
+        }],
     [chain_1.EChains.Mantle]: [
         {
             "symbol": "MNT",

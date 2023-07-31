@@ -360,4 +360,18 @@ exports.ALL_CHAINS = {
         token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Mantle].find(el => el.coingeckoId == 'mantle')),
         explorerScanLike: 'https://explorer.mantle.xyz/api'
     },
+    [chain_1.EChains.Neon]: {
+        id: 245022934,
+        rpc: {
+            endpoint: 'https://neon-proxy-mainnet.solana.p2p.org',
+            supportBatchCall: true
+        },
+        name: 'NEON',
+        currency: 'NEON',
+        explorer: {
+            tx: function (tx) { return `https://neonscan.org/tx/${tx}`; },
+        },
+        isEvm: true,
+        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Neon].find(el => el.coingeckoId == 'neon'))
+    },
 };

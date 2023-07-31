@@ -361,4 +361,18 @@ export const ALL_CHAINS: { [key in EChains]?: IChain } = {
         token: new TokenJSON(ALL_TOKENS[EChains.Mantle].find(el => el.coingeckoId == 'mantle')),
         explorerScanLike: 'https://explorer.mantle.xyz/api'
     },
+    [EChains.Neon]: {
+        id: 245022934,
+        rpc: {
+            endpoint: 'https://neon-proxy-mainnet.solana.p2p.org',
+            supportBatchCall: true
+        },
+        name: 'NEON',
+        currency: 'NEON',
+        explorer: {
+            tx: function(tx: string) {return `https://neonscan.org/tx/${tx}`},
+        },
+        isEvm: true,
+        token: new TokenJSON(ALL_TOKENS[EChains.Neon].find(el => el.coingeckoId == 'neon'))
+    },
 }
