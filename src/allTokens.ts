@@ -40,13 +40,38 @@ const WETH = new TokenJSON({
 });
 
 export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
-    [EChains.Rollux]: [{
-        "symbol": "SYS",
-        "name": "SYS",
-        "decimals": 18,
-        "chainId": EChains.Rollux,
-        "coingeckoId": "syscoin"
-    }],
+    [EChains.Rollux]: [
+        {
+            "symbol": "SYS",
+            "name": "SYS",
+            "decimals": 18,
+            "chainId": EChains.Rollux,
+            "coingeckoId": "syscoin"
+        }, {
+            address: '0x4200000000000000000000000000000000000006',
+            decimals: 6,
+            symbol: 'wSYS',
+            "name": "wSYS",
+            coingeckoId: 'syscoin',
+            chainId: EChains.Rollux
+        }, {
+            address: '0x28c9c7fb3fe3104d2116af26cc8ef7905547349c',
+            decimals: 6,
+            symbol: 'USDT',
+            "name": "USDT",
+            coingeckoId: 'tether',
+            chainId: EChains.Rollux
+        }, {
+            address: '0x368433cac2a0b8d76e64681a9835502a1f2a8a30',
+            decimals: 6,
+            symbol: 'USDC',
+            "name": "USDC",
+            coingeckoId: 'usd-coin',
+            chainId: EChains.Rollux
+        },
+
+
+    ],
     [EChains.Neon]: [{
         "symbol": "NEON",
         "name": "NEON",

@@ -22,13 +22,36 @@ const WETH = new TokenJSON({
     chainId: chain_1.EChains.Mantle
 });
 exports.ALL_TOKENS = {
-    [chain_1.EChains.Rollux]: [{
+    [chain_1.EChains.Rollux]: [
+        {
             "symbol": "SYS",
             "name": "SYS",
             "decimals": 18,
             "chainId": chain_1.EChains.Rollux,
             "coingeckoId": "syscoin"
-        }],
+        }, {
+            address: '0x4200000000000000000000000000000000000006',
+            decimals: 6,
+            symbol: 'wSYS',
+            "name": "wSYS",
+            coingeckoId: 'syscoin',
+            chainId: chain_1.EChains.Rollux
+        }, {
+            address: '0x28c9c7fb3fe3104d2116af26cc8ef7905547349c',
+            decimals: 6,
+            symbol: 'USDT',
+            "name": "USDT",
+            coingeckoId: 'tether',
+            chainId: chain_1.EChains.Rollux
+        }, {
+            address: '0x368433cac2a0b8d76e64681a9835502a1f2a8a30',
+            decimals: 6,
+            symbol: 'USDC',
+            "name": "USDC",
+            coingeckoId: 'usd-coin',
+            chainId: chain_1.EChains.Rollux
+        },
+    ],
     [chain_1.EChains.Neon]: [{
             "symbol": "NEON",
             "name": "NEON",
