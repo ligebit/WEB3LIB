@@ -386,6 +386,7 @@ exports.ALL_CHAINS = {
             tx: function (tx) { return `https://explorer.rollux.com/tx/${tx}`; },
         },
         isEvm: true,
-        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Rollux].find(el => el.coingeckoId == 'syscoin'))
+        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Rollux].find(el => el.coingeckoId == 'syscoin')),
+        explorerScanLike: 'https://explorer.rollux.com/api'
     }
 };

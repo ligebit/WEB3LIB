@@ -387,6 +387,7 @@ export const ALL_CHAINS: { [key in EChains]?: IChain } = {
             tx: function(tx: string) {return `https://explorer.rollux.com/tx/${tx}`},
         },
         isEvm: true,
-        token: new TokenJSON(ALL_TOKENS[EChains.Rollux].find(el => el.coingeckoId == 'syscoin'))
+        token: new TokenJSON(ALL_TOKENS[EChains.Rollux].find(el => el.coingeckoId == 'syscoin')),
+        explorerScanLike: 'https://explorer.rollux.com/api'
     }
 }
