@@ -387,6 +387,6 @@ exports.ALL_CHAINS = {
         },
         isEvm: true,
         token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Rollux].find(el => el.coingeckoId == 'syscoin')),
-        explorerScanLike: 'https://explorer.rollux.com/api'
+        explorerScanLike: 'https://rpc.rollux.com'
     }
 };
