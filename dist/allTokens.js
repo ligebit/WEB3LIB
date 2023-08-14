@@ -31,7 +31,7 @@ exports.ALL_TOKENS = {
             "coingeckoId": "syscoin"
         }, {
             address: '0x4200000000000000000000000000000000000006',
-            decimals: 6,
+            decimals: 18,
             symbol: 'wSYS',
             "name": "wSYS",
             coingeckoId: 'syscoin',
