@@ -375,4 +375,18 @@ export const ALL_CHAINS: { [key in EChains]?: IChain } = {
         isEvm: true,
         token: new TokenJSON(ALL_TOKENS[EChains.Neon].find(el => el.coingeckoId == 'neon'))
     },
+    [EChains.Rollux]: {
+        id: 570,
+        rpc: {
+            endpoint: 'https://rpc.rollux.com',
+            supportBatchCall: true
+        },
+        name: 'Rollux',
+        currency: 'SYS',
+        explorer: {
+            tx: function(tx: string) {return `https://explorer.rollux.com/tx/${tx}`},
+        },
+        isEvm: true,
+        token: new TokenJSON(ALL_TOKENS[EChains.Rollux].find(el => el.coingeckoId == 'syscoin'))
+    }
 }

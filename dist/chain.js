@@ -23,6 +23,7 @@ var EChains;
     EChains[EChains["FANTOM"] = 250] = "FANTOM";
     EChains[EChains["BobaNetwork"] = 288] = "BobaNetwork";
     EChains[EChains["KCC"] = 321] = "KCC";
+    EChains[EChains["Rollux"] = 570] = "Rollux";
     EChains[EChains["ASTAR"] = 592] = "ASTAR";
     EChains[EChains["Wanchain"] = 888] = "Wanchain";
     EChains[EChains["Metis"] = 1088] = "Metis";

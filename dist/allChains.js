@@ -374,4 +374,18 @@ exports.ALL_CHAINS = {
         isEvm: true,
         token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Neon].find(el => el.coingeckoId == 'neon'))
     },
+    [chain_1.EChains.Rollux]: {
+        id: 570,
+        rpc: {
+            endpoint: 'https://rpc.rollux.com',
+            supportBatchCall: true
+        },
+        name: 'Rollux',
+        currency: 'SYS',
+        explorer: {
+            tx: function (tx) { return `https://explorer.rollux.com/tx/${tx}`; },
+        },
+        isEvm: true,
+        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Rollux].find(el => el.coingeckoId == 'syscoin'))
+    }
 };

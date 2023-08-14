@@ -40,6 +40,13 @@ const WETH = new TokenJSON({
 });
 
 export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
+    [EChains.Rollux]: [{
+        "symbol": "SYS",
+        "name": "SYS",
+        "decimals": 18,
+        "chainId": EChains.Rollux,
+        "coingeckoId": "syscoin"
+    }],
     [EChains.Neon]: [{
         "symbol": "NEON",
         "name": "NEON",
