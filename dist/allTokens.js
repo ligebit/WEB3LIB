@@ -40,7 +40,7 @@ exports.ALL_TOKENS = {
         },
         {
             address: '0xDc3af65eCBD339309Ec55F109CB214E0325c5eD4',
-            decimals: 18,
+            decimals: 6,
             symbol: 'USDT',
             "name": "USDT",
             coingeckoId: 'tether',
@@ -48,7 +48,7 @@ exports.ALL_TOKENS = {
         },
         {
             address: '0xE1aB220E37AC55A4E2dD5Ba148298A9c09fBD716',
-            decimals: 18,
+            decimals: 6,
             symbol: 'USDC',
             "name": "USDC",
             coingeckoId: 'usd-coin',
