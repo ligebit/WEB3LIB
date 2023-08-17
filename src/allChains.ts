@@ -389,5 +389,20 @@ export const ALL_CHAINS: { [key in EChains]?: IChain } = {
         isEvm: true,
         token: new TokenJSON(ALL_TOKENS[EChains.Rollux].find(el => el.coingeckoId == 'syscoin')),
         explorerScanLike: 'https://explorer.rollux.com/api'
+    },
+    [EChains.Oasys]: {
+        id: 248,
+        rpc: {
+            endpoint: 'https://oasys-rpc.gateway.pokt.network',
+            supportBatchCall: true
+        },
+        name: 'Rollux',
+        currency: 'SYS',
+        explorer: {
+            tx: function(tx: string) {return `https://scan.oasys.games/tx/${tx}`},
+        },
+        isEvm: true,
+        token: new TokenJSON(ALL_TOKENS[EChains.Oasys].find(el => el.coingeckoId == 'oasys')),
+        explorerScanLike: 'https://scan.oasys.games/api'
     }
 }

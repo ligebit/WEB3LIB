@@ -388,5 +388,20 @@ exports.ALL_CHAINS = {
         isEvm: true,
         token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Rollux].find(el => el.coingeckoId == 'syscoin')),
         explorerScanLike: 'https://explorer.rollux.com/api'
+    },
+    [chain_1.EChains.Oasys]: {
+        id: 248,
+        rpc: {
+            endpoint: 'https://oasys-rpc.gateway.pokt.network',
+            supportBatchCall: true
+        },
+        name: 'Rollux',
+        currency: 'SYS',
+        explorer: {
+            tx: function (tx) { return `https://scan.oasys.games/tx/${tx}`; },
+        },
+        isEvm: true,
+        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Oasys].find(el => el.coingeckoId == 'oasys')),
+        explorerScanLike: 'https://scan.oasys.games/api'
     }
 };

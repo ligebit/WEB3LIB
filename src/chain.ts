@@ -19,6 +19,7 @@ export enum EChains {
     Fuse = 122,
     HuobiChain = 128,
     Polygon = 137,
+    Oasys = 248,
     FANTOM = 250,
     BobaNetwork = 288,
     KCC = 321,

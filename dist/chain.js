@@ -20,6 +20,7 @@ var EChains;
     EChains[EChains["Fuse"] = 122] = "Fuse";
     EChains[EChains["HuobiChain"] = 128] = "HuobiChain";
     EChains[EChains["Polygon"] = 137] = "Polygon";
+    EChains[EChains["Oasys"] = 248] = "Oasys";
     EChains[EChains["FANTOM"] = 250] = "FANTOM";
     EChains[EChains["BobaNetwork"] = 288] = "BobaNetwork";
     EChains[EChains["KCC"] = 321] = "KCC";
