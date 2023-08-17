@@ -392,7 +392,7 @@ exports.ALL_CHAINS = {
     [chain_1.EChains.Oasys]: {
         id: 248,
         rpc: {
-            endpoint: 'https://oasys-rpc.gateway.pokt.network',
+            endpoint: 'https://rpc.mainnet.oasys.games/',
             supportBatchCall: true
         },
         name: 'Rollux',
