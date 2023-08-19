@@ -19,7 +19,7 @@ class Token {
         }
     }
     static from(address, chainId) {
-        return exports.tokensCache.get(address.toLowerCase()).find(t => t.chainId == chainId);
+        return exports.tokensCache.get(address.toLowerCase())?.find(t => t.chainId == chainId);
     }
     equals(other) {
         return this.address === other.address;
