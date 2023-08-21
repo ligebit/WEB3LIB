@@ -236,7 +236,7 @@ export const ALL_CHAINS: { [key in EChains]?: IChain } = {
             tx: function(tx: string) {return `https://scan.coredao.org/tx/${tx}`},
         },
         rpc: {
-            endpoint: 'https://rpc-core.icecreamswap.com',
+            endpoint: 'https://rpc.coredao.org',
             supportBatchCall: true
         },
         // explorerScanLike: 'https://scan.coredao.org/api',

@@ -235,7 +235,7 @@ exports.ALL_CHAINS = {
             tx: function (tx) { return `https://scan.coredao.org/tx/${tx}`; },
         },
         rpc: {
-            endpoint: 'https://rpc-core.icecreamswap.com',
+            endpoint: 'https://rpc.coredao.org',
             supportBatchCall: true
         },
         // explorerScanLike: 'https://scan.coredao.org/api',
