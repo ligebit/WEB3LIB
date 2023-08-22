@@ -96277,13 +96277,6 @@ exports.ALL_TOKENS = {
             "coingeckoId": 'kava',
         },
         {
-            address: '0xeb466342c4d449bc9f53a865d5cb90586f405215',
-            decimals: 6,
-            chainId: chain_1.EChains.KavaEVM,
-            symbol: 'axlUSDC',
-            coingeckoId: 'usd-coin',
-        },
-        {
             address: '0xc86c7c0efbd6a49b35e8714c5f59d99de09a225b',
             decimals: 18,
             chainId: chain_1.EChains.KavaEVM,
@@ -96310,6 +96303,41 @@ exports.ALL_TOKENS = {
             chainId: chain_1.EChains.KavaEVM,
             symbol: 'multiDAI',
             coingeckoId: 'dai',
+        },
+        {
+            address: '0xeb466342c4d449bc9f53a865d5cb90586f405215',
+            decimals: 6,
+            chainId: chain_1.EChains.KavaEVM,
+            symbol: 'axlUSDC',
+            coingeckoId: 'usd-coin',
+        },
+        {
+            address: '0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6',
+            decimals: 6,
+            chainId: chain_1.EChains.KavaEVM,
+            symbol: 'axlUSDT',
+            coingeckoId: 'tether',
+        },
+        {
+            address: '0x5C7e299CF531eb66f2A1dF637d37AbB78e6200C7',
+            decimals: 18,
+            chainId: chain_1.EChains.KavaEVM,
+            symbol: 'axlDAI',
+            coingeckoId: 'dai',
+        },
+        {
+            address: '0xb829b68f57CC546dA7E5806A929e53bE32a4625D',
+            decimals: 18,
+            chainId: chain_1.EChains.KavaEVM,
+            symbol: 'axlETH',
+            coingeckoId: 'ethereum',
+        },
+        {
+            address: '0x1a35EE4640b0A3B87705B0A4B45D227Ba60Ca2ad',
+            decimals: 8,
+            chainId: chain_1.EChains.KavaEVM,
+            symbol: 'axlBTC',
+            coingeckoId: 'bitcoin',
         }
     ],
     [chain_1.EChains.Ultron]: [
