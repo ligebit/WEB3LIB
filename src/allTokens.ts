@@ -58,7 +58,7 @@ export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
         },
         {
             address: '0xDc3af65eCBD339309Ec55F109CB214E0325c5eD4',
-            decimals: 6,
+            decimals: 18,
             symbol: 'USDT',
             "name": "USDT",
             coingeckoId: 'tether',
@@ -66,7 +66,7 @@ export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
         },
         {
             address: '0xE1aB220E37AC55A4E2dD5Ba148298A9c09fBD716',
-            decimals: 6,
+            decimals: 18,
             symbol: 'USDC',
             "name": "USDC",
             coingeckoId: 'usd-coin',
