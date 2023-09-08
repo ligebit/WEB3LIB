@@ -40,6 +40,39 @@ const WETH = new TokenJSON({
 });
 
 export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
+    [EChains.Fx]: [
+        {
+            "symbol": "FX",
+            "name": "FX",
+            "decimals": 18,
+            "chainId": EChains.Fx,
+            "coingeckoId": "fx-coin"
+        },
+        {
+            "symbol": "WFX",
+            "name": "WFX",
+            "decimals": 18,
+            "chainId": EChains.Fx,
+            "coingeckoId": "fx-coin",
+            address: '0x80b5a32e4f032b2a058b4f29ec95eefeeb87adcd'
+        },
+        {
+            "symbol": "USDT",
+            "name": "USDT",
+            "decimals": 6,
+            "chainId": EChains.Fx,
+            "coingeckoId": "tether",
+            address: '0xeceeefcee421d8062ef8d6b4d814efe4dc898265',
+        },
+        {
+            "symbol": "WETH",
+            "name": "WETH",
+            "decimals": 18,
+            "chainId": EChains.Fx,
+            "coingeckoId": "ethereum",
+            address: '0x0ce35b0d42608ca54eb7bcc8044f7087c18e7717'
+        },
+    ],
     [EChains.Oasys]: [
         {
             "symbol": "OAS",

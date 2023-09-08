@@ -23,6 +23,7 @@ export enum EChains {
     FANTOM = 250,
     BobaNetwork = 288,
     KCC = 321,
+    Fx = 530,
     Rollux = 570,
     ASTAR = 592,
     Wanchain = 888,

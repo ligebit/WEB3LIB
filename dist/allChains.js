@@ -403,5 +403,19 @@ exports.ALL_CHAINS = {
         isEvm: true,
         token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Oasys].find(el => el.coingeckoId == 'oasys')),
         explorerScanLike: 'https://scan.oasys.games/api'
+    },
+    [chain_1.EChains.Fx]: {
+        id: 530,
+        rpc: {
+            endpoint: 'https://fx-json-web3.functionx.io:8545',
+            supportBatchCall: true
+        },
+        name: 'Fx',
+        currency: 'FX',
+        explorer: {
+            tx: function (tx) { return `https://starscan.io/dex/tx/${tx}`; },
+        },
+        isEvm: true,
+        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Oasys].find(el => el.coingeckoId == 'oasys')),
     }
 };
