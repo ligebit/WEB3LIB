@@ -418,5 +418,20 @@ export const ALL_CHAINS: { [key in EChains]?: IChain } = {
         },
         isEvm: true,
         token: new TokenJSON(ALL_TOKENS[EChains.Oasys].find(el => el.coingeckoId == 'oasys')),
+    },
+    [EChains.Pego]: {
+        id: 20201022,
+        rpc: {
+            endpoint: 'https://node3.pegorpc.com',
+            supportBatchCall: true
+        },
+        name: 'PG',
+        currency: 'PG',
+        explorer: {
+            tx: function(tx: string) {return `https://scan.pego.network/tx/${tx}`},
+        },
+        isEvm: true,
+        token: new TokenJSON(ALL_TOKENS[EChains.Pego].find(el => el.coingeckoId == 'pego-network-2')),
+        explorerScanLike: 'https://scan.pego.network/api'
     }
 }

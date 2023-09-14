@@ -22,6 +22,31 @@ const WETH = new TokenJSON({
     chainId: chain_1.EChains.Mantle
 });
 exports.ALL_TOKENS = {
+    [chain_1.EChains.Pego]: [
+        {
+            "symbol": "PG",
+            "name": "PG",
+            "decimals": 18,
+            "chainId": chain_1.EChains.Pego,
+            "coingeckoId": "pego-network-2"
+        },
+        {
+            "symbol": "wPG",
+            "name": "wPG",
+            "decimals": 18,
+            "chainId": chain_1.EChains.Pego,
+            "coingeckoId": "pego-network-2",
+            address: '0x0cF4071940782b640d0b595Cb17bDf3E90869d70',
+        },
+        {
+            "symbol": "USDT",
+            "name": "USDT",
+            "decimals": 18,
+            "chainId": chain_1.EChains.Pego,
+            "coingeckoId": "tether",
+            address: '0x02F9Bebf5E54968D8Cc2562356C91ECDE135801B',
+        },
+    ],
     [chain_1.EChains.Fx]: [
         {
             "symbol": "FX",

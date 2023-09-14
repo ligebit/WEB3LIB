@@ -45,6 +45,7 @@ var EChains;
     EChains[EChains["GodwokenV1"] = 71402] = "GodwokenV1";
     EChains[EChains["EosEVM"] = 17777] = "EosEVM";
     EChains[EChains["Energy"] = 39797] = "Energy";
+    EChains[EChains["Pego"] = 20201022] = "Pego";
     EChains[EChains["Neon"] = 245022934] = "Neon";
     EChains[EChains["Aurora"] = 1313161554] = "Aurora";
     EChains[EChains["Harmony"] = 1666600000] = "Harmony";

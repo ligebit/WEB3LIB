@@ -43,6 +43,7 @@ export declare enum EChains {
     GodwokenV1 = 71402,
     EosEVM = 17777,
     Energy = 39797,
+    Pego = 20201022,
     Neon = 245022934,
     Aurora = 1313161554,
     Harmony = 1666600000,
