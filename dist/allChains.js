@@ -432,5 +432,19 @@ exports.ALL_CHAINS = {
         isEvm: true,
         token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Pego].find(el => el.coingeckoId == 'pego-network-2')),
         explorerScanLike: 'https://scan.pego.network/api'
+    },
+    [chain_1.EChains.Beam]: {
+        id: 4337,
+        rpc: {
+            endpoint: 'https://subnets.avax.network/beam/mainnet/rpc',
+            supportBatchCall: true
+        },
+        name: 'Beam',
+        currency: 'Beam',
+        explorer: {
+            tx: function (tx) { return `https://subnets.avax.network/beam/tx/${tx}`; },
+        },
+        isEvm: true,
+        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Pego].find(el => el.coingeckoId == 'beam-2'))
     }
 };
