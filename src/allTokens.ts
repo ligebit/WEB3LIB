@@ -40,6 +40,32 @@ const WETH = new TokenJSON({
 });
 
 export const ALL_TOKENS: { [key in EChains]?: ITokenJSON[] } = {
+    [EChains.Beam]: [
+        {
+            "symbol": "BEAM",
+            "name": "BEAM",
+            "decimals": 18,
+            "chainId": EChains.Beam,
+            "coingeckoId": "beam-2",
+            address: '0xD51BFa777609213A653a2CD067c9A0132a2D316A',
+        },
+        {
+            "symbol": "USDC",
+            "name": "USDC",
+            "decimals": 6,
+            "chainId": EChains.Beam,
+            "coingeckoId": "usd-coin",
+            address: '0x76BF5E7d2Bcb06b1444C0a2742780051D8D0E304',
+        },
+        {
+            "symbol": "USDT",
+            "name": "USDT",
+            "decimals": 6,
+            "chainId": EChains.Beam,
+            "coingeckoId": "tether",
+            address: '0x999f90f25a2922ae1b21A06066F7EDEbedad42a9',
+        },
+    ],
     [EChains.Pego]: [
         {
             "symbol": "PG",

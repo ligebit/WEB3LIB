@@ -33,6 +33,7 @@ export declare enum EChains {
     Moonriver = 1285,
     CubeChain = 1818,
     KavaEVM = 2222,
+    Beam = 4337,
     Mantle = 5000,
     Evmos = 9001,
     Bitgert = 32520,
