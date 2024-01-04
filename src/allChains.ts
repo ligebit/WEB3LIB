@@ -446,6 +446,6 @@ export const ALL_CHAINS: { [key in EChains]?: IChain } = {
             tx: function(tx: string) {return `https://subnets.avax.network/beam/tx/${tx}`},
         },
         isEvm: true,
-        token: new TokenJSON(ALL_TOKENS[EChains.Pego].find(el => el.coingeckoId == 'beam-2'))
+        token: new TokenJSON(ALL_TOKENS[EChains.Beam].find(el => el.coingeckoId == 'beam-2'))
     }
 }

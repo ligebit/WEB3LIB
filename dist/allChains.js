@@ -445,6 +445,6 @@ exports.ALL_CHAINS = {
             tx: function (tx) { return `https://subnets.avax.network/beam/tx/${tx}`; },
         },
         isEvm: true,
-        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Pego].find(el => el.coingeckoId == 'beam-2'))
+        token: new allTokens_1.TokenJSON(allTokens_1.ALL_TOKENS[chain_1.EChains.Beam].find(el => el.coingeckoId == 'beam-2'))
     }
 };
